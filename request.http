@@ -1,0 +1,25 @@
+GET http://localhost:3000/api/post HTTP/1.1
+
+###
+GET http://localhost:3000/api/post/5c6e08be644c7d0f7c06e799 HTTP/1.1
+
+###
+POST http://localhost:3000/api/post HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "mi quinto post",
+  "content": "hols"
+}
+
+###
+PUT http://localhost:3000/api/post/5c6e08ed644c7d0f7c06e79c HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "mi quinto post",
+  "content": "content"
+}
+
+###
+DELETE http://localhost:3000/api/post/5c6e0b26c9ae5611c2ed1144 HTTP/1.1

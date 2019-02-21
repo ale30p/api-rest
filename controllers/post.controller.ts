@@ -1,7 +1,7 @@
 import Post from "../models/post";
 
-function statusError(res ,err): void {
-  res.status(500).json({err});
+function statusError(res, error): void {
+  res.status(500).json({error});
 };
 
 function statusSuccess(res, result): void {
@@ -9,7 +9,7 @@ function statusSuccess(res, result): void {
 };
 
 function statusUnprocessableEntity(res, message): void {
-  res.status(422).json({err: message});
+  res.status(422).json({error: message});
 }
 
 export function getAllPosts(req, res, next) {

@@ -19,5 +19,5 @@ export default (app) => {
   postRouter.put('/:id', updatePost);
   postRouter.delete('/:id', deletePost);
 
-  app.use('/', apiRouter);
+  app.use('/api', apiRouter);
 }

@@ -6,7 +6,8 @@
     "outDir": "build"
   },
   "include": [
-    "*/**/*.ts"
+    "*/**/*.ts",
+    "server.ts"
   ],
   "exclude": [
     "node_modules",
